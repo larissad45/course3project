@@ -113,7 +113,7 @@ Then, We extract only the measurements on the mean and standard deviation for ea
         
 Later, We uses descriptive activity names to name the activities in the data set Tidy_Info and change de column name from Id to Activity.
 
-Finally, We made the Tidy_Info column names more readable, changing strings with gsub() and regular expresions.
+Finally, We made the Tidy_Info column names more readable, changing strings with gsub() and regular expresions:
 "Acc""          = "Accelerometer"
 "BodyBody"      = "Body"
 "Gyro"          = "Gyroscope"
@@ -123,11 +123,11 @@ Finally, We made the Tidy_Info column names more readable, changing strings with
 "-std()"        = "Std"
 "-freq()"       = "Frequency"
 
-Replace t and f at the beginning
+Replace t and f at the beginning:
 "^t"            = "Time"
 "^f"            ="Frequency"
 
-Eliminate the ellipsis (... or .. or . at the end)
+Eliminate the ellipsis (... or .. or . at the end):
 "\\.\\.\\."     = "\\."
 "\\.\\."        = ""
 "[\\.]$"        = ""
