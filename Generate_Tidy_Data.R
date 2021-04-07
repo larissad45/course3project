@@ -49,4 +49,7 @@ Calculated_Mean <- Tidy_Info %>%
         summarise_all(funs(mean))
 
 ## Write the Tidy CSV
-data.table::fwrite(x = Calculated_Mean, file = "Course3_Tidy_Data.csv", quote = FALSE)
+## data.table::fwrite(x = Calculated_Mean, file = "Course3_Tidy_Data.csv", quote = FALSE)
+
+## Write the Tidy txt file
+write.table(Calculated_Mean, "Course3_Tidy_Data.txt", row.name=FALSE)

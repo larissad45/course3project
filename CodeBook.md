@@ -132,4 +132,4 @@ Finally, We made the Tidy_Info column names more readable, changing strings with
 
 
 FINAL RESULT:
-We create a new data frame called Calculated_Mean calculating the mean by volunteer (subject) and activity and export the result to the Course3_Tidy_Data.csv file. Total: 180 rows x 88 columns.
+We create a new data frame called Calculated_Mean calculating the mean by volunteer (subject) and activity and export the result to the Course3_Tidy_Data.txt or Course3_Tidy_data.csv file. Total: 180 rows x 88 columns.
