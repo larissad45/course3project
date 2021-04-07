@@ -1,9 +1,8 @@
-#DATA ORIGIN: 
-##Human Activity Recognition Using Smartphones Data Set.
+DATA ORIGIN: Human Activity Recognition Using Smartphones Data Set.
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, they captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 30% of the volunteers was selected for generating the test data and 70% the training data.
 
-#VARIABLES:
+VARIABLES:
 
 features <- Contains the "UCI HAR Dataset/features.txt" data set. The features selected for this variable come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
         Columns:        "Id": Identifies the function observed.
@@ -92,7 +91,7 @@ y_train <- Contains the "UCI HAR Dataset/train/y_train.txt" data set.
 
         Total: 7352 obs. of  1 column
         
-#TRANSFORMATIONS:
+TRANSFORMATIONS:
 We need to combine the data in one data set, using rbind().
 
 x <- Combines training (x_train) and test (x_test) data for the 561 feature columns.
@@ -132,5 +131,5 @@ Eliminate the ellipsis (... or .. or . at the end)
 "[\\.]$"        = ""
 
 
-#FINAL RESULT:
+FINAL RESULT:
 We create a new data frame called Calculated_Mean calculating the mean by volunteer (subject) and activity and export the result to the Course3_Tidy_Data.txt or Course3_Tidy_data.csv file. Total: 180 rows x 88 columns.
